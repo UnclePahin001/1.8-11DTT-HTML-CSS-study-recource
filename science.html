@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyGuide - Science</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="science-header">
+        <nav>
+            <a href="index.html"><img src="images/StudyGuide Logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="nav.html">SUBJECTS</a></li>
+                    <li><a href="math.html">MATHS</a></li>
+                    <li><a href="english.html">ENGLISH</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Science | 1.2 Pysics of an Application</h1>
+    </section>
+        
+    <!---------- science Page Content ---------->    
+    
+    <section class="science">
+        <div class="row">
+            <div class="science-col">
+                <h1>NCEA Level One Science</h1>     
+                    <p>In this achievement standard, you will be understanding the physics of an application through modeling. You will be
+                        analyzing physics concepts/phenomena in the taiao (environment) which you will then evaluate and integrate evidence to
+                        do so. The level of achievement that you will reach is decided by the way you process information. The key words are
+                        describe, explain, and discuss the use of physics knowledge. Your teacher will give you written instructions of: possible
+                        research applications; the way to collect and process information; and the way to present your report.</p>
+
+                    <h2>Achievement</h2>
+                        <p>Demonstrate understanding of the physics application</p>
+                <br>
+                <h2>Achievement with Merit</h2>
+                        <p>Demonstrate in-depth understanding of the physics of an application</p>
+                <br>
+                <h2>Achievement with Excellence</h2>
+                        <p>Demonstrate comprehensive understanding of the physics of an application</p> 
+                <br>
+                <h2>Advice and tips</h2>
+                        <p>To make the absolute most of your exam and excel yourself,</p>
+
+                        <dl>
+                            <b><dt>Make sure you:</dt></b>
+                                <dd>- follow the written instructions that will be given to you by your teacher</dd>
+                                <dd>- research should include at least three resources. Gather your resources and make copies that you can show your teacher</dd>
+                                <dd>- gather information from different types of resources including, but not limited to, books, magazines, people, internet</dd>
+                                <dd>- use the assessment resource provided to you as a guideline</dd>   
+                                <dd>- do not use the same applications as provided in the assessment resource. Make sure the report is your own work</dd>      
+                          </dl>  
+                <br>
+                <h2>Useful recources</h2>
+                <p>Below are some very handy resources that can help you to bring your exam to the next level!</p>
+                                <dd><a href="https://www.nzqa.govt.nz/ncea/subjects/physics/annotated-exemplars/level-1-as90936/">NZQA | Annotated student exemplars</a></dd>
+            </div>
+            <div class="science-col">
+                <img src="images/science3.jpg">
+            </div>
+        </div>    
+    </section>
+        
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>StudyGuide</h4>
+    <p>StudyGuide is a free to use resource available to all NCEA Level One students. Study resources have been sourced from the<br>Ministry of Education (MoE) to ensure reliability and credibility. Made by students, for students</p>
+    <a href="https://www.linkedin.com/in/zahinmb/" class="footer-link"><p>Brought to life with Visual Studio Code by UnclePahin, August 2022</p></a>
+</section>          
+  
+    <!----JavaScript for toggle menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script> 
+        
+    
+        </body></html>

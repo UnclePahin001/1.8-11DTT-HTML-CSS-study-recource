@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/home1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 135px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #be9b7b;
+    display: block;
+    margin: auto;
+    transition: .5s;    
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 20px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.hero-btn:hover{
+    border: 1px solid #854442;
+    background: #854442;
+}
+
+
+@media(max-width: 700px)
+{
+   .nav-links ul li
+    {
+        display: block;
+    }
+    .nav-links
+    {
+        position: fixed;
+        background: #38B6FF;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer; 
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
+
+/*---------------- subjects (index) ----------------*/
+
+.sub{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.sub-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.sub-col img{
+    width: 100%;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+.layer:hover{
+    background:  #be9b7b;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/*---------- testimonials --------*/
+
+.test{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;  
+}
+  
+.test-col{
+    flex-basis: 31%;
+    background: #ffff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.test-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+} 
+
+
+/*-------- let's study (bottom of index) ----------*/
+
+.lts{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/study\ banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.lts h1{
+    color: #fff;
+    margin-bottom: 40px; 
+    padding: 0; 
+}
+
+@media(max-width:700px){
+    .lts h1{
+        font-size: 24px;
+    }
+}
+
+/*--------------footer---------------*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+/*---------- about page -------------*/
+
+.about-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.about-left{
+    flex-basis: 65%;
+}
+.about-right{
+    flex-basis: 32%;
+}
+.about-left img{
+    width: 100%;
+}
+.about-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.about-left p{
+    color: #999;
+    padding: 0;
+}
+
+.about-right h3{
+    background: #854442;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.about-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+@media (max-width:700px){
+    .sub-header h1{
+        font-size: 24px;
+    }
+} 
+
+/*--------------- subjects page (NCEA NAV) --------------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/nav\ banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.mts{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/maths2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.mts h1{
+    color: #fff;
+    margin-bottom: 40px; 
+    padding: 0; 
+}
+
+@media(max-width:700px){
+    .mts h1{
+        font-size: 24px;
+    }
+}
+
+.eng{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/english2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.eng h1{
+    color: #fff;
+    margin-bottom: 40px; 
+    padding: 0; 
+}
+
+@media(max-width:700px){
+    .eng h1{
+        font-size: 24px;
+    }
+}
+
+.sci{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/science2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.sci h1{
+    color: #fff;
+    margin-bottom: 40px; 
+    padding: 0; 
+}
+
+@media(max-width:700px){
+    .sci h1{
+        font-size: 24px;
+    }
+}
+
+/*--------------- maths page --------------*/
+
+.maths-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/maths2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.maths-header h1{
+    margin-top: 100px;
+}
+.maths{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.maths-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.maths-col h1{
+    padding-top: 0;
+}
+.maths-col p{
+    padding: 15px 0 25px;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.maths-col img{
+    width: 100%;
+}
+
+/*--------------- english page --------------*/
+
+.english-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/english2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.english-header h1{
+    margin-top: 100px;
+}
+.english{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.english-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.english-col h1{
+    padding-top: 0;
+}
+.english-col p{
+    padding: 15px 0 25px;
+}
+.content-image{
+    flex-basis: 50%;
+}
+.english-col img{
+    width: 100%;
+}
+
+/*--------------- science page --------------*/
+
+.science-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/science2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.science-header h1{
+    margin-top: 100px;
+}
+.science{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.science-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.science-col h1{
+    padding-top: 0;
+}
+.science-col p{
+    padding: 15px 0 25px;
+}
+.science-image{
+    flex-basis: 50%;
+}
+.science-col img{
+    width: 100%;
+}
+

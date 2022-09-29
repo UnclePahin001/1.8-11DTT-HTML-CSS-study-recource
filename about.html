@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyGuide - About StudyGuide</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/StudyGuide Logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="nav.html">SUBJECTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>StudyGuide. Made By Students, For Students</h1>
+    </section>
+    
+<!---------- about page Content ---------->
+    
+    <section class="about-content">
+    <div class="row">
+    <div class="about-left">
+        <img src="images/about1.jpg">
+        <h2>StudyGuide, Let's Get Learning!</h2>
+        
+        <p>StudyGuide is a free to use, online study resource for NCEA Level One students who take mathematics, english, and science subject external examinations. StudyGuide covers the external standards with study resources aimed directly at developing a student's knowledge of what is involved in the respective standard. Study materials have been created with the input of highly decorated educators who have taught under the NCEA program for several years.</p>
+        <br>
+        <p>With over 80% of students who have used StudyGuide learning resources for their studies achieving excellence in both exams, subject endorsement, and course endorsement; and more than 2700 students attaining outstanding scholarships with large international educational institutions, we are one of the leading study resource hubs available for NCEA. Kickstart your study journey with us today!</p>
+        <br>
+
+        <h4>Frequently Asked Questions:</h4>
+            <br>
+                 <p>Q: Does StudyGuide make/use good study materials?</p>
+                 <p>A: All of our study resources have been either made by one of our highly decorated educators, or they have been sourced from approved sources by the MoE (Ministry of Education)</p>
+            <br>
+                 <p>Q: How much does it cost to study with StudyGuide?</p>
+                 <p>A: It is completely free of charge for anyone and everyone!</p>
+            <br>
+                 <p>Q: When can I get my learning journey started?</p>
+                 <p>A: Simply head to the SUBJECTS page via the navigation bar on the top right of our website and then choose your subject. Studying has never been easier!</p>
+    </div>
+        
+    <div class="about-right">
+        
+        
+            <h3>StudyGuide | Statistics</h3>
+            <div>
+                <span>Students we have helped</span>
+                <span>157,363 students</span>
+            </div>
+            <div>
+                <span>Students who achived excelence</span>
+                <span>133,643 students</span>
+            </div>
+            <div>
+                <span>Students who achived scholarhips</span>
+                <span>2763 students</span>
+            </div>
+            <div>
+                <span>Highly decorated staff at StudyGuide</span>
+                <span>31 educators</span>
+            </div>
+           
+        </div> 
+    
+    </div>
+    </section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>StudyGuide</h4>
+    <p>StudyGuide is a free to use resource available to all NCEA Level One students. Study resources have been sourced from the<br>Ministry of Education (MoE) to ensure reliability and credibility. Made by students, for students</p>
+    <a href="https://www.linkedin.com/in/zahinmb/" class="footer-link"><p>Brought to life with Visual Studio Code by UnclePahin, August 2022</p></a>
+</section>          
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    

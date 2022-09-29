@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+<title>StudyGuide by UnclePahin</title>
+    <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+</head>
+    <body>
+        <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="images/StudyGuide Logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="nav.html">SUBJECTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>StudyGuide</h1>
+            <p>Your number one study companion for NCEA<br>Numeracy, Literacy, & Science</p>
+            <a class="hero-btn">Scroll Down</a>
+        </div>
+    </section>
+    
+<!---------- subjects ---------->
+    
+    <section class="sub">
+        <h1>Core Subjects</h1>
+        <p>The subjects that we offer</p>
+            <div class="row">
+                <div class="sub-col">
+                    <img src="images/maths1.jpg">
+                    <div class="layer">
+                        <h3>MATHMATICS | Chance & Data</h3>
+                    </div>
+                </div>
+                <div class="sub-col">
+                    <img src="images/english1.jpg">
+                    <div class="layer">
+                        <h3>ENGLISH | Unfamiliar Texts</h3>
+                    </div>
+                </div>
+                <div class="sub-col">
+                    <img src="images/science1.jpg">
+                    <div class="layer">
+                        <h3>SCIENCE | Physics</h3>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+<!---------- testimonials ----------->
+    
+<section class="test">
+    <h1>Testimonials</h1>
+    <p>See what students have to say about StudyGuide</p>
+        <div class="row">
+            <div class="test-col">
+                <img src="images/michael1.jpg">
+                     <h3>Michael Wheeler</h3>
+                         <p> Before my exams, I was stressed out and struggled to understand the exams that I was sitting. My friend reccomended that I try StudyGuide and I have never been more prepared. StudyGuide has helped me to understand the exams that I am sitting and has helped me to know what to remember. My grades have never been better. Thank you StudyGuide!</p>
+            </div>
+            <div class="test-col">
+                <img src="images/david1.jpg">
+                <h3>David Fletcher</h3>
+                <p>After I finish my high school studies, I want to become an electritian. To do this however, I needed to understand the exam for maths that I would need to sit to be able to do well. StudyGuide has helped me understand the paper inside and out and I have never felt better. I now work as an electritian and I could not reccomend StudyGuide enough. Try it out and you will not be dissapointed.</p>
+            </div>
+            <div class="test-col">
+                <img src="images/jenny1.jpg">
+                <h3>Jenny McGraith</h3>
+                <p>My friends and I like to hang out a lot which has reduced the time that I have had to study. This is why when I discovered StudyGuide, I have never felt more confident about my education. Not only can I still spend a lot of time with my friends, I am also able to get the best grades I have ever gotten in my high school life. StudyGuide works!</p>
+            </div>
+        </div>
+</section>
+
+<!------ ncea page link ------>
+
+<section class="lts">
+    
+       <h1>Are you ready to study?</h1>
+        <a href="nav.html" class="hero-btn">LET'S GO!</a>
+    
+</section>    
+ 
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>StudyGuide</h4>
+    <p>StudyGuide is a free to use resource available to all NCEA Level One students. Study resources have been sourced from the<br>Ministry of Education (MoE) to ensure reliability and credibility. Made by students, for students</p>
+    <a href="https://www.linkedin.com/in/zahinmb/" class="footer-link"><p>Brought to life with Visual Studio Code by UnclePahin, August 2022</p></a>
+</section>          
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>

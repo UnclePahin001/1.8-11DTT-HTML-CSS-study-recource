@@ -1,0 +1,73 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyGuide - NCEA</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/StudyGuide Logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="nav.html">SUBJECTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Subjects</h1>
+    </section>
+
+<!---------- subjects ---------->
+    
+<section class="mts">
+    
+    <h1>Mathematics | 1.12 Chance & Data</h1>
+     <a href="math.html" class="hero-btn">LET'S GO!</a>
+ 
+</section> 
+
+
+<section class="eng">
+    
+    <h1>English | 1.3 Unfamiliar Text(s)</h1>
+     <a href="english.html" class="hero-btn">LET'S GO!</a>
+ 
+</section> 
+
+
+<section class="sci">
+    
+    <h1>Science | 1.2 Physics of an Application</h1>
+     <a href="science.html" class="hero-btn">LET'S GO!</a>
+ 
+</section> 
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>StudyGuide</h4>
+    <p>StudyGuide is a free to use resource available to all NCEA Level One students. Study resources have been sourced from the<br>Ministry of Education (MoE) to ensure reliability and credibility. Made by students, for students</p>
+    <a href="https://www.linkedin.com/in/zahinmb/" class="footer-link"><p>Brought to life with Visual Studio Code by UnclePahin, August 2022</p></a>
+</section>          
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    
